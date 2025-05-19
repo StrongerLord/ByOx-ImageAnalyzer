@@ -8,7 +8,7 @@ import base64
 
 app = Flask(__name__)
 CORS(app, resources={r"analyze": {
-	"origins": ["https://social.memz.live"],
+	"origins": ["https://social.memz.live", "http://localhost:5000"],
 	"methods": ["POST"],
 	"allow_headers": ["Content-Type"],
 }})
