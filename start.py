@@ -45,5 +45,10 @@ def analyze():
 
 	return jsonify({'result': result, 'image': img_as_text}), 200
 
+@app.route('/', methods=['GET'])
+def main():
+	return jsonify({'OK', 'All good'})
+
+
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', debug=True)
