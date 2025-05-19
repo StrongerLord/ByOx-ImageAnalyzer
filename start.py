@@ -47,7 +47,7 @@ def analyze():
 
 @app.route('/', methods=['GET'])
 def main():
-	return jsonify({'OK', 'All good'})
+	return jsonify({'OK': 'All good'}), 200
 
 
 if __name__ == '__main__':
